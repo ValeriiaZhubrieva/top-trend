@@ -276,7 +276,7 @@ body {
   margin-bottom: 3.875rem;
 }
 .benefits__title {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2.5rem;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -340,7 +340,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1.8125rem;
+  gap: 1.8125rem 0.9375rem;
 }
 .benefits__feature-num {
   font-weight: 400;
@@ -1177,14 +1177,14 @@ body {
   aspect-ratio: 360/240;
 }
 .reviews__item-title {
-  padding: 0.25rem 1.6875rem;
+  padding: 0.25rem 1.25rem;
   border: 0.125rem solid #fc7d27;
   border-radius: 3.125rem;
   font-size: 1rem;
   text-transform: uppercase;
   line-height: 1.2;
   margin: 0 auto 2.0625rem;
-  max-width: fit-content;
+  max-width: 100%;
 }
 .reviews__item-title p {
   display: flex;
@@ -1434,7 +1434,7 @@ body {
   }
   .benefits__features {
     display: grid;
-    gap: 1.8125rem 1rem;
+    gap: 1.8125rem 0.9375rem;
     grid-template-columns: repeat(2, 1fr);
   }
   .benefits__feature-num {
@@ -1758,9 +1758,6 @@ body {
   .reviews__item-info {
     padding: 1.375rem 0.625rem 2.3125rem;
   }
-  .reviews__item-title {
-    max-width: 100%;
-  }
   .reviews__item-title b {
     font-size: 1.75rem;
   }
@@ -1815,7 +1812,7 @@ body {
     margin: 0 -8.25rem;
   }
   .benefits__info {
-    max-width: 45rem;
+    max-width: 45.625rem;
     width: 100%;
   }
   .features__btns {
