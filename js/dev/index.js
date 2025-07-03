@@ -4975,22 +4975,3 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
-const videoBlocks = document.querySelectorAll(".video");
-videoBlocks.forEach((videoBlock) => {
-  const videoPlayBtn = videoBlock.querySelector(".video__play-btn");
-  const videoBody = videoBlock.querySelector(".video__body");
-  const video = videoBlock.querySelector(".video__body video");
-  videoPlayBtn.addEventListener("click", () => {
-    videoBlocks.forEach((block) => {
-      const otherVideo = block.querySelector(".video__body video");
-      const otherVideoBody = block.querySelector(".video__body");
-      if (otherVideo !== video) {
-        otherVideo.pause();
-        otherVideo.currentTime = 0;
-        otherVideoBody.classList.remove("video-play");
-      }
-    });
-    videoBody.classList.add("video-play");
-    video.play();
-  });
-});
